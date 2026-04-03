@@ -32,6 +32,37 @@ Face-Recognition-Attendance/
 ├── requirements.txt            # Python dependencies                                          
 └── background1.png             # UI background image for recognition
 
+## Installation
+
+Clone the repository and navigate into it:
+
+```bash
+git clone https://github.com/<your-username>/Face-Recognition-Attendance.git
+cd Face-Recognition-Attendance
+```
+**Usage**
+1️⃣ Add New Faces
+
+Run the script to capture new face data and store it in MySQL:
+```bash
+python add_face.py
+```
+- Enter your name and allow the program to capture 100 face samples.
+
+2️⃣ Take Attendance
+
+Run the real-time recognition script:
+```bash
+python test.py
+```
+- Press o to record attendance.
+- Press q to quit.
+3️⃣ View Attendance Dashboard (Streamlit)
+Run the Streamlit dashboard:
+```bash
+streamlit run streamlit_app.py
+```
+
 **Dependencies**
 -Python 3.8+                        
 -OpenCV (opencv-python)                                    
